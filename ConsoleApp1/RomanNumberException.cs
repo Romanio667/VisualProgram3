@@ -15,8 +15,8 @@ namespace RNE
             try
             {
 
-                throw new Exception("Ошибка: Недопустимое значение, допустимый диапозон {1-999}");
-
+                if (n > 1000) throw new Exception("Ошибка: Недопустимое значение, число должно быть меньше 1000");
+                else throw new Exception("Ошибка: Недопустимое значение, число должно быть больше 0");
             }
             catch (Exception ex)
             {
